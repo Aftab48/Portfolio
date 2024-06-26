@@ -12,6 +12,7 @@ const items = [
     desc: "Fully responsive landing page with modern UI/UX designs, properly using key concepts of tailwind css and reactjs.",
     img: "/bw.png",
     link: "https://brainware-aftab.vercel.app/",
+    alt: "Brainware Landing Page",
   },
   {
     id: 2,
@@ -20,14 +21,16 @@ const items = [
     desc: "A Full Stack Real Estate website with full functionality and responsiveness.",
     img: "/nr2.png",
     link: "https://nr-star-ae.vercel.app/",
+    alt: "Real Estate Website",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Apple Website",
-    desc: "3D responsive website using three.js and reactjs, with modern UI/UX designs and animations.",
-    img: "/Apple3.png",
-    link: "https://aftab-iphone.vercel.app/",
+    title: "MeetSpace",
+    desc: "A custom app for online meetings and video calls.",
+    img: "/ms.png",
+    link: "https://meetspace.vercel.app/",
+    alt: "MeetSpace",
   },
   {
     id: 4,
@@ -35,7 +38,17 @@ const items = [
     title: "3D Portfolio Website",
     desc: "3D Portfolio website with multiple 3d models optimized with threejs for devices with bigger screens.",
     img: "/port.png",
-    link: "https://aftabalam.tech/",
+    link: "https://aftab-port.netlify.app/",
+    alt: "3D Portfolio Website",
+  },
+  {
+    id: 5,
+    color: "from-red-300 to-blue-300",
+    title: "CaseCobra",
+    desc: "A full stack website for creating your own custom phone case. Integrated with its own authentication and stripe payments functionality, and a custom dashboard page for admins.",
+    img: "/cc.png",
+    link: "https://casecobra-a.vercel.app/",
+    alt: "CaseCobra",
   },
 ];
 
@@ -68,14 +81,20 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill  />
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[350px] lg:h-[250px] xl:w-[400px] xl:h-[250px]">
+                    <Image src={item.img} alt={item.alt} fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w-96 lg:w-[400px] lg:text-lg xl:w-[500px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} target="_blank" className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="flex justify-start"
+                  >
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      See Demo
+                    </button>
                   </Link>
                 </div>
               </div>
