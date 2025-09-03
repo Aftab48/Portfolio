@@ -33,9 +33,9 @@ const AboutPage = () => {
             <Image
               src="/aftab.png"
               alt=""
-              width={112}
-              height={112}
-              className="w-28 h-28 rounded-full object-cover"
+              width={128}
+              height={128}
+              className="w-32 h-32 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">INTRODUCTION</h1>
@@ -43,7 +43,7 @@ const AboutPage = () => {
             <p className="text-lg">
               I'm a skilled Fullstack Developer with experience in web and
               mobile apps, and expertise in frameworks like React.js, Next.js,
-              Node.js, and Three.js.I'm a quick learner and collaborate closely
+              Node.js, and Three.js. I'm a quick learner and collaborate closely
               with clients to create efficient, scalable, and user-friendly
               solutions that solve real-world problems. Let's work together to
               bring your ideas to life!
