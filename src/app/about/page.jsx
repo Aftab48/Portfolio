@@ -31,7 +31,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src= "/img.jpg"
+              src="/aftab.png"
               alt=""
               width={112}
               height={112}
@@ -41,12 +41,17 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">INTRODUCTION</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            I'm a skilled software developer with experience in Frontend Designing, and expertise in frameworks like React.js, Next.js, Node.js, and Three.js.I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+              I'm a skilled Fullstack Developer with experience in web and
+              mobile apps, and expertise in frameworks like React.js, Next.js,
+              Node.js, and Three.js.I'm a quick learner and collaborate closely
+              with clients to create efficient, scalable, and user-friendly
+              solutions that solve real-world problems. Let's work together to
+              bring your ideas to life!
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              "The only way to do great work is to love what you do." 
-                - Steve Jobs
+              "The only way to do great work is to love what you do." - Steve
+              Jobs
             </span>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
@@ -109,6 +114,12 @@ const AboutPage = () => {
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                SQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                PostgreSQL
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Node.js
@@ -186,16 +197,19 @@ const AboutPage = () => {
               className=""
             >
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+
+              <div className="flex justify-between h-64">
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Web Developer
+                    Web Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-md italic">
-                  Developing Frontend Designs for web applications using mainly HTML, CSS and Javascript or frameworks like React.js and Next.js.{" "}
+                    Developing Frontend Designs for web applications using
+                    mainly HTML, CSS and Javascript or frameworks like React.js
+                    and Next.js.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -233,15 +247,18 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Backend Developer
+                    Backend Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Skilled in working with APIs and integrating them to any frontend design. Efficient data management, writing complex queries, and designing and optimizing databases using MySQL or MongoDB.{" "}
+                    Skilled in working with APIs and integrating them to any
+                    frontend design. Efficient data management, writing complex
+                    queries, and designing and optimizing databases using MySQL
+                    or MongoDB.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2022 - 2023{" "}
+                    2022 - Present{" "}
                   </div>
                   {/* JOB COMPANY */}
                   {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -259,8 +276,9 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-md italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    Built and delivered custom web and mobile applications,
+                    covering frontend, backend, and deployment for diverse
+                    client needs.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
