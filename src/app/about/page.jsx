@@ -26,7 +26,7 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 xl:pb-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -48,6 +48,28 @@ const AboutPage = () => {
               solutions that solve real-world problems. Let's work together to
               bring your ideas to life!
             </p>
+
+            {/* ACHIEVEMENTS */}
+            <div className="flex flex-col gap-2">
+              <h2 className="font-semibold text-xl">Achievements</h2>
+              <ul className="list-disc list-inside text-lg">
+                <li>🏆 3× Hackathon Winner</li>
+                <li>
+                  💡 Recognized for building real-time, impactful web apps
+                </li>
+              </ul>
+            </div>
+
+            {/* PERSONAL SECTION */}
+            {/* <div className="flex flex-col gap-6 justify-center pb-12">
+              <h1 className="font-bold text-2xl">BEYOND CODE</h1>
+              <p className="text-lg">
+                When I’m not coding, I enjoy sketching, exploring AI art tools,
+                cycling, and playing chess. I believe in lifelong learning and
+                building technology that makes a difference.
+              </p>
+            </div> */}
+
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
               "The only way to do great work is to love what you do." - Steve
@@ -78,7 +100,7 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div className="flex flex-col gap-8 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
