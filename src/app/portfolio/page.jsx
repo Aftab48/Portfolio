@@ -143,7 +143,7 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
               >
                 <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold bg-gradient-to-r text-gray-500 drop-shadow-lg bg-clip-text text-transparent">
+                  <h1 className="text-xl md:text-4xl lg:text-6xl xl:text-8xl font-bold bg-gradient-to-r text-gray-500 drop-shadow-lg bg-clip-text ">
                     {item.title}
                   </h1>
 
