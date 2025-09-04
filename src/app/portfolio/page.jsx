@@ -202,12 +202,18 @@ const PortfolioPage = () => {
                 d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
               />
             </defs>
-            <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
+            <text fill="#000" className="pointer-events-none">
+              {" "}
+              {/* 👈 add this */}
+              <textPath
+                xlinkHref="#circlePath"
+                className="text-xl pointer-events-none"
+              >
                 Full Stack Developer and UI Designer
               </textPath>
             </text>
           </motion.svg>
+
           <Link
             href="/contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center z-10"

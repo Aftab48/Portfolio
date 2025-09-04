@@ -88,21 +88,28 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 w-1/3">
+
+      {/* SOCIAL + CV */}
+      <div className="hidden md:flex gap-4 items-center w-1/3 justify-end">
         <Link href="https://github.com/Aftab48" target="_blank">
-          <Image src="/github.png" alt="" width={24} height={24} />
+          <Image src="/github.png" alt="github" width={24} height={24} />
         </Link>
-        <Link href="https://www.instagram.com/_aftab_4884/" target="_blank" >
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+        <Link
+          href="https://www.linkedin.com/in/aftab-alam-53b521246/"
+          target="_blank"
+        >
+          <Image src="/linkedin.png" alt="linkedin" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/aftab-alam-53b521246/" target="_blank">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+        <Link
+          href="/AftabAlam-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm px-3 py-1 border rounded-md hover:bg-white bg-black text-white hover:text-black transition"
+        >
+          View CV
         </Link>
       </div>
+
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
         {/* MENU BUTTON */}
@@ -134,15 +141,48 @@ const Navbar = () => {
             animate="opened"
             className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
+            {/* NAV LINKS */}
             {links.map((link) => (
-              <motion.div
-                variants={listItemVariants}
-                className=""
-                key={link.title}
-              >
+              <motion.div variants={listItemVariants} key={link.title}>
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
+
+            {/* CV BUTTON */}
+            <motion.div variants={listItemVariants}>
+              <Link
+                href="/AftabAlam-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg px-4 py-2 border rounded-md hover:bg-white hover:text-black transition"
+              >
+                View CV
+              </Link>
+            </motion.div>
+
+            {/* SOCIAL LINKS */}
+            <motion.div variants={listItemVariants} className="flex gap-6 mt-6">
+              <Link href="https://github.com/Aftab48" target="_blank">
+                <Image
+                  src="/github.png"
+                  className="bg-white"
+                  alt="GitHub"
+                  width={32}
+                  height={32}
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/aftab-alam-53b521246/"
+                target="_blank"
+              >
+                <Image
+                  src="/linkedin.png"
+                  alt="LinkedIn"
+                  width={32}
+                  height={32}
+                />
+              </Link>
+            </motion.div>
           </motion.div>
         )}
       </div>
