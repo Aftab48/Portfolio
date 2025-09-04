@@ -46,7 +46,7 @@ const items = [
     id: 5,
     color: "from-red-300 to-blue-300",
     title: "CaseCobra",
-    desc: "Hackathon Project: A full stack website for creating your own custom phone case. Integrated with its own authentication and stripe payments functionality, and a custom dashboard page for admins.",
+    desc: "Personal Project: A full stack website for creating your own custom phone case. Integrated with its own authentication and stripe payments functionality, and a custom dashboard page for admins.",
     img: "/cc.png",
     link: "https://casecobra-a.vercel.app",
     alt: "CaseCobra",
@@ -204,7 +204,6 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000" className="pointer-events-none">
               {" "}
-              {/* 👈 add this */}
               <textPath
                 xlinkHref="#circlePath"
                 className="text-xl pointer-events-none"
